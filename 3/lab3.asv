@@ -48,30 +48,30 @@ xlabel('Czas [s]')
 grid on
 
 %% parametry
-mean1 = srednia(t, y1);
-en1 = energia(y1);
-min1 = minimum(y1);
-max1 = maksimum(y1);
+mean_1 = srednia(t, y1);
+en_1 = energia(y1);
+min_1 = minimum(y1);
+max_1 = maksimum(y1);
 
-mean2 = srednia(t, y2);
-en2 = energia(y2);
-min2 = minimum(y2);
-max2 = maksimum(y2);
+mean_2 = srednia(t, y2);
+en_2 = energia(y2);
+min_2 = minimum(y2);
+max_2 = maksimum(y2);
 
-mean3 = srednia(t, y3);
-en3 = energia(y3);
-min3 = minimum(y3);
-max3 = maksimum(y3);
+mean_3 = srednia(t, y3);
+en_3 = energia(y3);
+min_3 = minimum(y3);
+max_3 = maksimum(y3);
 
-mean4 = srednia(t, y4);
-en4 = energia(y4);
-min4 = minimum(y4);
-max4 = maksimum(y4);
+mean_4 = srednia(t, y4);
+en_4 = energia(y4);
+min_4 = minimum(y4);
+max_4 = maksimum(y4);
 
-mean5 = srednia(t, y5);
-en5 = energia(y5);
-min5 = minimum(y5);
-max5 = maksimum(y5);
+mean_5 = srednia(t, y5);
+en_5 = energia(y5);
+min_5 = minimum(y5);
+max_5 = maksimum(y5);
 
 %% Rysunki
 figure(1)
@@ -114,6 +114,6 @@ fprintf(zapis, '%12.12f %12.12f %12.12f %12.12f %12.12f\n', wyniki);
 fclose('all');
 
 %% roznice
-e_min=[min1-min(y1);min2-min(y2);min3-min(y3);min4-min(y4);min5-min(y5)];
-e_max=[max1-max(y1);max2-max(y2);max3-max(y3);max4-max(y4);max5-max(y5)];
-e_srednia=[mean1-mean(y1);mean2-mean(y2);mean3-mean(y3);mean4-mean(y4);mean5-mean(y5)];
+e_min=[min0-min(y);min1-min(y1);min2-min(y2);min3-min(y3);min4-min(y4)];
+e_max=[max0-max(y);max1-max(y1);max2-max(y2);max3-max(y3);max4-max(y4)];
+e_srednia=[srednia-mean(y);srednia1-mean(y1);srednia2-mean(y2);srednia3-mean(y3);srednia4-mean(y4)];

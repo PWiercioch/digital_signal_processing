@@ -2,7 +2,7 @@ classdef generator < handle
     
     properties (Access = public)
         t
-        y % share thuis value
+        y
         f1
         f2
         A
@@ -21,7 +21,7 @@ classdef generator < handle
             obj.B = B
         end
         
-        function square_impulse(obj, t) % should be able to be used twice
+        function square_impulse(obj, t) 
             for n = 1:1:length(t)
                if abs(t(n)) == 0.5
                    obj.y(n) = 0.5
